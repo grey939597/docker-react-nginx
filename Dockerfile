@@ -23,5 +23,5 @@ RUN mkdir /usr/share/nginx/html2
 COPY --from=builder /usr/src/app/build /usr/share/nginx/html2
 
 # 80포트 오픈하고 nginx 실행
-EXPOSE 80
+EXPOSE 100
 CMD ["nginx", "-g", "daemon off;"]
